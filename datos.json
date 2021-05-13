@@ -2,7 +2,11 @@
   {
     "maquina": "Espiraladora de Esmerila",
     "status": 85,
+<<<<<<< HEAD
     "contasor": 3679
+=======
+    "contasor": 3680
+>>>>>>> fd9768f4083a8ad2cc2ef68cda7b2c8bdbf2c75f
    },
   {
     "maquina": "CTS2100 codigo 100",
