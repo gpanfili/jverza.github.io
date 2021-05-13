@@ -14,6 +14,30 @@ var Opcion_cpu;
 
 init_imagenes();
 
+
+
+
+
+var intervalID = window.setInterval(LecturaJson, 500);
+
+function LecturaJson() {
+ 
+fetch('https://jverza.github.io/datos.json')
+.then((response) => response.json())
+.then(res =>   document.getElementById("datos_maquina").innerText = res[0].maquina + " cantidad de tudos " + res[0].contasor )
+
+}
+
+
+
+
+
+
+
+
+
+
+
 btn_piedra.onclick = function() {
     Opcion_jugador = 0;
     img_usuario.src = "./img/Piedra.png";
@@ -46,14 +70,7 @@ btn_tijeras.onclick = function() {
 
 }
 
-switch (Menu) {
-    case "espera":
-        console.log("Esperando..");
-        break;
-    case "inicio":
-        console.log("Iniciando juego");
-        break;
-}
+
 
 
 function init_imagenes() {
