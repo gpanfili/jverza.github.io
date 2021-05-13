@@ -23,19 +23,11 @@ var intervalID = window.setInterval(LecturaJson, 1000);
 function LecturaJson() {
  
 fetch("./datos.json")
+//fetch("https://jverza.github.io/datos.json")
 .then((response) => response.json())
 .then(res =>   document.getElementById("datos_maquina").innerText = res[0].maquina + " cantidad de tudos " + res[0].contasor )
 
 }
-
-
-
-
-
-
-
-
-
 
 
 btn_piedra.onclick = function() {
