@@ -1,5 +1,5 @@
 {
-  maquina: "espiraladora Esmerila",
-  status: 25,
-  contador1: 56
+  "maquina": "espiraladora Esmerila",
+  "status": 25,
+  "contador1": 56
 }
